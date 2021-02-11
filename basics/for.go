@@ -17,14 +17,18 @@ func main() {
 
 	// Классический цикл while
 	for cond {
-		if cntr == 10 { cond = false }
+		if cntr == 10 {
+			cond = false
+		}
 		fmt.Printf("%d из 10\n", cntr)
 		cntr++
 	}
 
 	// Классичсекий бесконечный цикл
 	for {
-		if cntr > 20 { break }
+		if cntr > 20 {
+			break
+		}
 		fmt.Printf("%d из 20\n", cntr)
 		cntr++
 	}
