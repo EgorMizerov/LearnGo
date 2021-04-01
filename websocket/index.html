@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Websocket Connection</h1>
+
+<script>
+    var ws1 = new WebSocket("ws://localhost:8080/ws1")
+    var ws2 = new WebSocket("ws://localhost:8080/ws2")
+    var ws3 = new WebSocket("ws://localhost:8080/ws3")
+
+    ws1.addEventListener("message", function (e) {
+        console.log(e);
+    })
+
+    ws2.addEventListener("message", function (e) {
+        console.log(e);
+    })
+
+    ws3.addEventListener("message", function (e) {
+        console.log(e);
+    })
+
+    // ws.send("foo")
+</script>
+</body>
+</html>
